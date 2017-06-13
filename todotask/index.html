@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TO DO APP</title>
+    <style>
+        h1 {
+            text-align: center;
+            text-decoration: underline;
+        }
+        
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+        li {
+            list-style: none;
+            padding: 8px;
+        }
+        
+        span {
+            padding: 0px 8px 0px 8px;
+        }
+        
+        button {
+            margin-right: 5px;
+            cursor: pointer;
+            background: #ccc;
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>TODO APP</h1>
+        <div>
+            <input type="text" name="taskcontent" value="Enter Task" onfocus="changeText()">
+            <button id="addTaskBtn">Add Task</button>
+        </div>
+        <div class="divIncompletedTask">
+            <h3>Incompleted Task</h3>
+            <ul class="inCompletedTask"> </ul>
+        </div>
+        <div class="divCompletedTask">
+            <h3>Completed Task</h3>
+            <ul class="completedTask"></ul>
+        </div>
+    </div>
+        <script src="todo.js"></script>
+    <script>
+    // anonymus functions 
+//    var fName = function(){
+//        return "Bikshu";
+//    }
+//    function fullName(firstName, lastName){
+//        
+//        console.log("Full name is: " + firstName() + " "+lastName);
+//    }
+//    fullName(fName,"shekkari");
+    </script>
+</body>
+
+</html>
