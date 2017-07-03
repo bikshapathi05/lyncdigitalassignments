@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="authApp">
+<html lang="en" ng-app="authApp" ng-init="registerStatus=false;loginStatus=false;logoutStatus=true;userProfile=true">
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,10 +25,13 @@
         <a class="navbar-brand" href="#">Authentication App</a>
       </div>
       <ul class="nav navbar-nav pull-right">
-        <li><a href="#!/register">Register</a></li>
-        <li><a href="#!/login">Login</a></li>
+        <li><a href="#!/register" ng-hide="registerStatus">Register</a></li>
+        <li><a href="#!/login" ng-hide="loginStatus">Login</a></li>
+        <li><a href="#!/userProfile" ng-hide="userProfile">Profile</a></li>
+        <li><a href="#!/logout" ng-hide="logoutStatus">Logout</a></li>
       </ul>
     </div>
+      
   </nav>
   <div class="container" ng-view>
 
@@ -43,8 +46,12 @@
   <script src="register/registerCtrl.js"></script>
   <!-- login controllers-->
   <script src="login/loginCtrl.js"></script>
+    <!-- logout controllers-->
+  <script src="logout/logoutCtrl.js"></script>
   <!-- admin controllers-->
   <script src="admin/adminCtrl.js"></script>
+    <!-- userprofile controllers-->
+  <script src="userprofile/userProfileCtrl.js"></script>
 </body>
 
 </html>

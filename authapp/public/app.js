@@ -9,6 +9,10 @@ app.config(function($routeProvider) {
         templateUrl : "./login/login.html",
         controller: "loginCtrl"
     })
+    .when("/logout", {
+        templateUrl : "./login/login.html",
+        controller: "logoutCtrl"
+    })
     .when("/register", {
         templateUrl : "./register/register.html",
         controller: "registerCtrl"
@@ -16,8 +20,15 @@ app.config(function($routeProvider) {
     .when("/admin", {
         templateUrl : "./admin/admin.html"
     })
+    .when("/userProfile", {
+        templateUrl : "./userProfile/user-profile.html",
+        controller: "userProfileCtrl"
+    })
     .otherwise("/", {
         templateUrl : "./login/login.html",
         controller: "loginCtrl"
     });
 });
+app.controller("homeCtrl", function($scope){
+    $scope.logout = "true";
+})

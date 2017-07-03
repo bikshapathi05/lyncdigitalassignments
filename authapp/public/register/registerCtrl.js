@@ -39,7 +39,6 @@ app.controller("registerCtrl", ['$scope', '$http', '$location', function ($scope
                 $http.post("/api/register/", $scope.userInfo).then(function (response) {
                     if (response.data.status === true) {
                         $location.path("/login");
-                        console.log(response.data);
                         clearfeilds();
                     } else {
                         $scope.notification = response.data.message;
