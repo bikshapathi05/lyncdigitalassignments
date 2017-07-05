@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row" ng-init="tableView=true">
     <p>{{notification}}</p>
     <div class="col-md-6">
         <form class="form-horizontal" name="myForm" ng-submit="registerProfile()">
@@ -429,7 +429,7 @@
             </fieldset>
         </form>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-6" ng-hide="tabaleView">
         <div class="panel panel-success">
             <div class="panel-heading">
                 <h3 class="panel-title">Profle Details</h3>

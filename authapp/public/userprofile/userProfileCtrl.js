@@ -1,9 +1,9 @@
 app.controller("userProfileCtrl", ['$scope', '$http', '$location', '$rootScope', function ($scope, $http, $location, $rootScope) {
     //login status condition
-    $rootScope.registerStatus = false;
-    $rootScope.loginStatus = false;
-    $rootScope.logoutStatus = true;
-    $rootScope.userProfile = true;
+    $rootScope.registerStatus = true;
+    $rootScope.loginStatus = true;
+    $rootScope.logoutStatus = false;
+    $rootScope.userProfile = false;
     console.log("hello");
     $scope.registerProfile = function () {
         //        if ($scope.password != "") {

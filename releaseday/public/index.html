@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="rdApp">
+<head>
+  <title>Releaseday</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+<navbar-home></navbar-home>
+  
+<div class="container">
+  <div ng-view></div>
+</div>
+<script src="node_modules/angular/angular.js"></script>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="node_modules/angular-route/angular-route.js"></script>
+<!--front end app.js file-->
+<script src="app.js"></script>
+<script src="partials/navbar/navbar.js"></script>
+<!--homeCtrl file-->
+<script src="partials/home/homeCtrl.js"></script>
+<!--moviesCtrl file-->
+<script src="partials/movies/moviesCtrl.js"></script>
+<!--tvCtrl file-->
+<script src="partials/tv/tvCtrl.js"></script>
+<!--newsCtrl file-->
+<script src="partials/news/newsCtrl.js"></script>
+<!--regCtrl file-->
+<script src="partials/register/registerCtrl.js"></script>
+<!--loginCtrl file-->
+<script src="partials/login/loginCtrl.js"></script>
+</body>
+</html>

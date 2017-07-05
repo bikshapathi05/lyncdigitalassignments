@@ -1,0 +1,26 @@
+<div ng-repeat="movieInfo in moviesInfo">
+<div class="col-md-3">
+    <div><a style="cursor:pointer" data-toggle="modal" data-target="#{{movieInfo.id}}"><img src="{{movieInfo.thumbnail}}" class="img-responsive"></a></div>
+    <div><h4>{{movieInfo.title}}</h4></div>
+</div>
+<!-- Modal -->
+  <div class="modal fade" id="{{movieInfo.id}}" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">{{movieInfo.title}}</h4>
+        </div>
+        <div class="modal-body">
+          <div><img src="{{movieInfo.imageUrl}}" class="img-responsive"></div>
+          <p>{{movieInfo.genre}}</p>
+          <p>{{movieInfo.duration}}</p>
+          <p>{{movieInfo.description}}</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  </div>
